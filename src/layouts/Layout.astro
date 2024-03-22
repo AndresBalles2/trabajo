@@ -17,7 +17,7 @@ import { Icon } from 'astro-icon/components'
 		<header class="h-16 flex items-center">
 			<div class="container flex  rounded-2xl flex-row items-center justify-between max-w-[1200px] mx-auto">
 				<img src="/d.svg" alt="">
-				<a class="relative group text-gray-400 font-extrabold hover:text-[#50d71e] uppercase flex flex-row items-center" href="#">
+				<a class="relative group text-[#808080cc] font-extrabold hover:text-[#a1a1a1cc] uppercase flex flex-row items-center" href="#">
 					Idioma de la página: español
 					<Icon name="mdi:chevron-down"/>
 
@@ -27,6 +27,25 @@ import { Icon } from 'astro-icon/components'
 				</a>
 			</div>
 		</header>
+		<div class="flex justify-center mx-auto mt-32">
+			<div class="max-w-lg">
+				<img src = "/duolingo-promo.svg" alt="">
+			</div>
+			<div class="w-1/3 flex flex-col items-center justify-center">
+				<h1 class="text-3xl text-center font-bold text-slate-700 px-20">
+					¡La forma divertida, efectiva y gratis de aprender un idioma!
+				</h1>
+
+				<div class="w-80 h-10 bg-[#58CC02] flex justify-center items-center rounded-lg mt-10 p-6 text-white font-bold uppercase border-b-4 border-green-600 hover:cursor-pointer hover:bg-[#7edd36]">
+					Start Now!
+				</div>
+				<div class="uppercase font-bold text-[#1CB0F6] border-b-4 border-x-2 border-t-2 rounded-lg p-6 w-80 h-10 flex justify-center items-center mt-3 hover:cursor-pointer hover:bg-gray-200/60">
+					I'm already have an account
+				</div>
+				<Icon name="flagpack:us" size={64} />
+
+			</div>
+		</div>
 		<slot/>
 	</body>
 </html>
