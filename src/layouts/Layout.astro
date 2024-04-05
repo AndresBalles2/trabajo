@@ -42,10 +42,32 @@ import { Icon } from 'astro-icon/components'
 				<div class="uppercase font-bold text-[#1CB0F6] border-b-4 border-x-2 border-t-2 rounded-lg p-6 w-80 h-10 flex justify-center items-center mt-3 hover:cursor-pointer hover:bg-gray-200/60">
 					I'm already have an account
 				</div>
-				<Icon name="flagpack:us" size={64} />
+				
+			</div>
+		</div>
+		<div class="border-y-2 border-gray-200 mt-[185px]">
+			<div class="flex justify-around container max-w-[50%] items-center py-4 m-auto">
+				<Icon name="mdi:keyboard-arrow-left" size={25} class="text-[#808080cc]"/>
+				<Icon name="flagpack:us" size={35} class="rounded-xl" /><p class="text-[#696969cc] font-bold uppercase text-sm hover:cursor-pointer">Inglés</p>
+				<Icon name="flagpack:fr" size={35} class="rounded-xl" /><p class="text-[#696969cc] font-bold uppercase text-sm hover:cursor-pointer">Francés</p>
+				<Icon name="flagpack:de" size={35} class="rounded-xl" /><p class="text-[#696969cc] font-bold uppercase text-sm hover:cursor-pointer">Alemán</p>
+				<Icon name="flagpack:it" size={35} class="rounded-xl" /><p class="text-[#696969cc] font-bold uppercase text-sm hover:cursor-pointer">Italiano</p>
+				<Icon name="flagpack:br" size={35} class="rounded-xl" /><p class="text-[#696969cc] font-bold uppercase text-sm hover:cursor-pointer">Portugués</p>
+				<Icon name="flagpack:gh" size={35} class="rounded-xl" /><p class="text-[#696969cc] font-bold uppercase text-sm hover:cursor-pointer">Ghinea</p>
+				<Icon name="flagpack:ru" size={35} class="rounded-xl" /><p class="text-[#696969cc] font-bold uppercase text-sm hover:cursor-pointer">Ruso</p>
+				<Icon name="mdi:keyboard-arrow-right" size={25} class="text-[#808080cc]"/>
+			</div>
+		</div>
+
+		<div class="">
+			<div class="w-[530px]">
+				<img class="w-lg" src="/fo.svg" alt="">
+			</div>
+			<div class="bg-['']">
 
 			</div>
 		</div>
+		
 		<slot/>
 	</body>
 </html>
